@@ -32,7 +32,7 @@ export default function Home() {
       {unassigned > 0 && (
         <p className="notice">{unassigned} unit{unassigned === 1 ? ' has' : 's have'} no driver. <Link to="/assignments">Assign a driver</Link></p>
       )}
-      <p className="muted">Daily remittances and reports come next.</p>
+      <p><Link to="/daily">Record today's remittances</Link></p>
     </>
   )
 }

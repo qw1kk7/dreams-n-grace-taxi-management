@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Drivers from './pages/Drivers'
 import Units from './pages/Units'
 import Assignments from './pages/Assignments'
+import Daily from './pages/Daily'
 
 export default function App() {
   const { session, profile, loading, isStaff, signOut } = useSession()
@@ -35,6 +36,7 @@ export default function App() {
         <strong className="brand">Dreams 'N Grace Taxi</strong>
         <nav>
           <NavLink to="/" end>Overview</NavLink>
+          <NavLink to="/daily">Daily</NavLink>
           <NavLink to="/drivers">Drivers</NavLink>
           <NavLink to="/units">Units</NavLink>
           <NavLink to="/assignments">Assignments</NavLink>
@@ -46,6 +48,7 @@ export default function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/daily" element={<Daily />} />
           <Route path="/drivers" element={<Drivers />} />
           <Route path="/units" element={<Units />} />
           <Route path="/assignments" element={<Assignments />} />

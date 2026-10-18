@@ -76,7 +76,7 @@ begin
     if r.paid > 0 then
       insert into remittances (business_id, driver_id, daily_operation_id, amount, received_by, received_at)
       values ('00000000-0000-0000-0000-0000000000b0', '00000000-0000-0000-0000-0000000000d1', op, r.paid,
-              '00000000-0000-0000-0000-0000000000a1', r.d + time '18:00');
+              '00000000-0000-0000-0000-0000000000a1', (r.d + time '18:00') at time zone 'Asia/Manila');
     end if;
     added := apply_no_remit_penalties('00000000-0000-0000-0000-0000000000b0', r.d);
     if added <> expected_added[i] then

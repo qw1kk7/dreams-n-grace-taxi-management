@@ -22,6 +22,7 @@ Sign in with `owner@example.com` / `password123` (sample data from `supabase/see
    npx supabase link --project-ref <your-project-ref>
    npx supabase db push
    ```
+   Or, without the CLI: open the **SQL editor** and run each file in `supabase/migrations/` in name order.
    Do not run `supabase/seed.sql` against the real project; it is sample data.
 3. In the Supabase dashboard, open **Authentication → Users** and create a login for each owner and for the admin.
 4. In the **SQL editor**, create the business and link the logins. Replace the emails and names:

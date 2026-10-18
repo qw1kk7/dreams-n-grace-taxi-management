@@ -11,7 +11,7 @@ A centralized taxi fleet management system for Dreams ’N Grace Taxi, designed 
 
 ## Status
 
-Phase 1 in progress. Working now: owner and admin login, drivers, units (with the daily boundary each one pays), and driver-to-unit assignments with history. Next: daily remittances, shorts and reports.
+Phase 1 in progress. Working now: owner and admin login, drivers, units (with the daily boundary each one pays), driver-to-unit assignments with history, and daily remittances: each day's boundary with Sunday and holiday discounts, cash or collateral payments, the ₱50 no-remit penalty, outstanding balances and the 3-day flag. Next: holidays, reports, maintenance and expenses.
 
 ## Checking the database schema
 
