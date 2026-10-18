@@ -41,7 +41,8 @@ The schema lives in `supabase/migrations/`. The business rules it implements are
 - Every business-owned table has `business_id`, and row level security keeps each business's data separate.
 - Owners and the admin can read and record everything in their business. Drivers can read only their own records and their current unit's maintenance.
 
-## Before going live
+## Going live
 
-- Enter the boundary rates (₱1,200 under 5 years, ₱1,100 from 5 years) and the year's holidays.
-- Decide how holidays are loaded each year. The plan is to pre-fill Philippine regular holidays automatically and let the owners correct them.
+Done on 2026-10-18: both migrations applied to the online project, the business and boundary rates (₱1,200 under 5 years, ₱1,100 from 5 years) created, and logins linked for the two owners and the admin.
+
+Still open: the year's holidays. The plan is to pre-fill Philippine regular holidays automatically and let the owners correct them. Until then, holidays can only be added in the SQL editor, and days without a holiday row are charged the normal rate.
