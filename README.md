@@ -4,8 +4,14 @@ A centralized taxi fleet management system for Dreams ’N Grace Taxi, designed 
 
 ## Documentation
 
+- [Setup](docs/SETUP.md): run it locally, or put it online with Supabase
+
 - [Business requirements](docs/BUSINESS_REQUIREMENTS.md): the confirmed rules for boundary, discounts, penalties and shorts
 - [Database schema](docs/DATABASE_SCHEMA.md): tables, views and design rules
+
+## Status
+
+Phase 1 in progress. Working now: owner and admin login, drivers, units (with the daily boundary each one pays), and driver-to-unit assignments with history. Next: daily remittances, shorts and reports.
 
 ## Checking the database schema
 
